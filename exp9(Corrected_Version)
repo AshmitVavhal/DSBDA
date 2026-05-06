@@ -1,0 +1,10 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = sns.load_dataset('titanic')
+
+sns.boxplot(data=df, x="sex", y="age", hue="survived")
+
+plt.show()
